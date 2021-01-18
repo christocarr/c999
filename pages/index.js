@@ -1,64 +1,92 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import VideoTitle from '../components/VideoTitle'
+import VideoPlayer from '../components/VideoPlayer'
+import VideoDescription from '../components/VideoDescription'
+import { data } from '../data'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+  const videoData = data.filter(item => item.section === 'video')
+  const installationData = data.filter(item => item.section === 'installations')
+  const mappingData = data.filter(item => item.section === 'mapping')
+  const experimentalData = data.filter(item => item.section === 'experimental')
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>c999 Visual Art</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+        {/* logo */}
+        <image></image>
+        <nav>
+          <ul>
+            <Link href="#videoart">
+              video
+            </Link>
+            <Link href="#experimental">
+              experimental
+            </Link>
+            <Link href="#installations">
+              installations
+            </Link>
+            <Link href="mapping">
+              mapping
+            </Link>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="video">
+          <h2>video</h2>
+          {videoData.map((item, index) => (
+            <div key={index}>
+              <VideoTitle title={item.title}/>
+              <VideoPlayer url={item.url}/>
+              <VideoDescription description={item.description}/>
+            </div>
+          ))}
+        </section>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <section id="experimental">
+          <h2>experimental</h2>
+          {experimentalData.map((item, index) => (
+            <div key={index}>
+              <VideoTitle title={item.title}/>
+              <VideoPlayer url={item.url}/>
+              <VideoDescription description={item.description}/>
+            </div>
+          ))}
+        </section>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <section id="installations">
+          <h2>installations</h2>
+          {installationData.map((item, index) => (
+            <div key={index}>
+              <VideoTitle title={item.title}/>
+              <VideoPlayer url={item.url}/>
+              <VideoDescription description={item.description}/>
+            </div>
+          ))}
+        </section>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section id="mapping">
+          <h2>mapping</h2>
+          {mappingData.map((item, index) => (
+            <div key={index}>
+              <VideoTitle title={item.title}/>
+              <VideoPlayer url={item.url}/>
+              <VideoDescription description={item.description}/>
+            </div>
+          ))}
+        </section>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <footer>
+        
       </footer>
     </div>
   )
