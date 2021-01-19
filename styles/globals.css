@@ -31,3 +31,7 @@ ul {
 li {
 	list-style: none;
 }
+
+section {
+	padding: 0 0.4em 0 0.4em;
+}

@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
+import Header from '../components/Header'
 import VideoTitle from '../components/VideoTitle'
 import VideoPlayer from '../components/VideoPlayer'
 import VideoDescription from '../components/VideoDescription'
@@ -20,37 +19,9 @@ export default function Home() {
         <title>c999 Visual Art</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.header}>
-        <div className={styles.header__image}>
-          <Image src="/images/c999-logo.png" width="204" height="84" alt="logo"/>
-        </div>
-        <nav className={styles.header__nav}>
-          <ul className={styles.header__nav_list}>
-            <li>
-              <Link href="#videoart">
-                video
-              </Link>
-            </li>
-            <li>
-              <Link href="#experimental">
-                experimental
-              </Link>
-            </li>
-            <li>
-              <Link href="#installations">
-                installations
-              </Link>
-            </li>
-            <li>
-              <Link href="mapping">
-                mapping
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <main>
-        <section id="video">
+        <section className={styles.section} id="video">
           <h2>video</h2>
           {videoData.map((item, index) => (
             <div key={index}>
@@ -61,18 +32,18 @@ export default function Home() {
           ))}
         </section>
 
-        <section id="experimental">
+        <section className={styles.section} id="experimental">
           <h2>experimental</h2>
           {experimentalData.map((item, index) => (
             <div key={index}>
-              <VideoTitle title={item.title}/>
               <VideoPlayer url={item.url}/>
+              <VideoTitle title={item.title}/>
               <VideoDescription description={item.description}/>
             </div>
           ))}
         </section>
 
-        <section id="installations">
+        <section className={styles.section} id="installations">
           <h2>installations</h2>
           {installationData.map((item, index) => (
             <div key={index}>
@@ -83,7 +54,7 @@ export default function Home() {
           ))}
         </section>
 
-        <section id="mapping">
+        <section className={styles.section} id="mapping">
           <h2>mapping</h2>
           {mappingData.map((item, index) => (
             <div key={index}>

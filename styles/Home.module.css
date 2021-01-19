@@ -1,23 +1,8 @@
-.header {
-	display: flex;
-	flex-direction: column;
+.section {
+	padding: 0.4em;
 }
 
-.header__image {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.header__nav {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.header__nav_list {
-	display: flex;
-	flex-direction: column;
-}
-
-.header__nav_list li {
-	text-align: right;
+.section h2 {
+	margin-bottom: 0;
+	border-bottom: red 2px solid;
 }
