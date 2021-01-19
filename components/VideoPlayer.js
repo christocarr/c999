@@ -12,9 +12,9 @@ function VideoPlayer({url}) {
         height="100%"
       /> */}
       <iframe src={url}
-        frameborder='0'
+        frameBorder='0'
         allow='autoplay; encrypted-media'
-        allowfullscreen
+        allowFullScreen
         title='video'
 />
     
