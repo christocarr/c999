@@ -1,6 +1,8 @@
+import styles from '../styles/Description.module.css'
+
 function VideoDescription({description}) {
   return (
-    <p>{description}</p>
+    <p className={styles.description}>{description}</p>
   )
 }
 
