@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import VideoTitle from '../components/VideoTitle'
 import VideoPlayer from '../components/VideoPlayer'
 import VideoDescription from '../components/VideoDescription'
@@ -19,23 +20,32 @@ export default function Home() {
         <title>c999 Visual Art</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        {/* logo */}
-        <image></image>
-        <nav>
-          <ul>
-            <Link href="#videoart">
-              video
-            </Link>
-            <Link href="#experimental">
-              experimental
-            </Link>
-            <Link href="#installations">
-              installations
-            </Link>
-            <Link href="mapping">
-              mapping
-            </Link>
+      <header className={styles.header}>
+        <div className={styles.header__image}>
+          <Image src="/images/c999-logo.png" width="204" height="84" alt="logo"/>
+        </div>
+        <nav className={styles.header__nav}>
+          <ul className={styles.header__nav_list}>
+            <li>
+              <Link href="#videoart">
+                video
+              </Link>
+            </li>
+            <li>
+              <Link href="#experimental">
+                experimental
+              </Link>
+            </li>
+            <li>
+              <Link href="#installations">
+                installations
+              </Link>
+            </li>
+            <li>
+              <Link href="mapping">
+                mapping
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

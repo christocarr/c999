@@ -1,0 +1,23 @@
+.header {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__image {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header__nav_list {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__nav_list li {
+	text-align: right;
+}
