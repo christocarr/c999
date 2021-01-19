@@ -27,7 +27,7 @@ function Header() {
           <Link href="">
             <div className={styles.mail}>
               <Image 
-                src="/images/mail.png"
+                src="/images/mail-icon.png"
                 layout="fill"
                 objectFit="cover"
                 alt="mail" 
