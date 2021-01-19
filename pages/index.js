@@ -25,8 +25,8 @@ export default function Home() {
           <h2>video</h2>
           {videoData.map((item, index) => (
             <div key={index}>
-              <VideoTitle title={item.title}/>
               <VideoPlayer url={item.url}/>
+              <VideoTitle title={item.title}/>
               <VideoDescription description={item.description}/>
             </div>
           ))}
@@ -47,8 +47,8 @@ export default function Home() {
           <h2>installations</h2>
           {installationData.map((item, index) => (
             <div key={index}>
-              <VideoTitle title={item.title}/>
               <VideoPlayer url={item.url}/>
+              <VideoTitle title={item.title}/>
               <VideoDescription description={item.description}/>
             </div>
           ))}
@@ -58,8 +58,8 @@ export default function Home() {
           <h2>mapping</h2>
           {mappingData.map((item, index) => (
             <div key={index}>
-              <VideoTitle title={item.title}/>
               <VideoPlayer url={item.url}/>
+              <VideoTitle title={item.title}/>
               <VideoDescription description={item.description}/>
             </div>
           ))}
