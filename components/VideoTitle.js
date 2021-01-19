@@ -1,6 +1,8 @@
+import styles from '../styles/VideoTitle.module.css'
+
 function VideoTitle({title}) {
   return (
-    <h3>{title}</h3>
+    <h3 className={styles.video__title}>{title}</h3>
   )
 }
 

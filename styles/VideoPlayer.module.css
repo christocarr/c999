@@ -1,5 +1,12 @@
 .player__wrapper {
+	display: flex;
+	justify-content: center;
 	position: relative;
+	margin-top: 1em;
+}
+
+.player__wrapper iframe {
+	width: 100%;
 }
 
 .player {
