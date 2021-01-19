@@ -20,11 +20,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
+      <main className={styles.main}>
         <section className={styles.section} id="video">
           <h2>video</h2>
           {videoData.map((item, index) => (
-            <div key={index}>
+            <div className={styles.video__section} key={index}>
               <VideoPlayer url={item.url}/>
               <VideoTitle title={item.title}/>
               <VideoDescription description={item.description}/>
@@ -35,7 +35,7 @@ export default function Home() {
         <section className={styles.section} id="experimental">
           <h2>experimental</h2>
           {experimentalData.map((item, index) => (
-            <div key={index}>
+            <div className={styles.video__section} key={index}>
               <VideoPlayer url={item.url}/>
               <VideoTitle title={item.title}/>
               <VideoDescription description={item.description}/>
@@ -46,7 +46,7 @@ export default function Home() {
         <section className={styles.section} id="installations">
           <h2>installations</h2>
           {installationData.map((item, index) => (
-            <div key={index}>
+            <div className={styles.video__section} key={index}>
               <VideoPlayer url={item.url}/>
               <VideoTitle title={item.title}/>
               <VideoDescription description={item.description}/>

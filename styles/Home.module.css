@@ -3,6 +3,34 @@
 }
 
 .section h2 {
-	margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 1em;
 	border-bottom: red 2px solid;
 }
+
+.main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.video__section {
+	margin-bottom: 2em;
+}
+
+/* @media (min-width: 1024px) {
+	.section {
+		display: flex;
+		width: 100%;
+	}
+
+	.section h2 {
+		display: block;
+	}
+
+	.video__section {
+		width: 45%;
+		justify-content: space-between;
+	}
+} */
