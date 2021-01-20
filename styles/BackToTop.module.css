@@ -1,9 +1,13 @@
 .button {
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	right: 50vw;
 	border: none;
-	background: rgba(255, 255, 255, 0.5);
-	padding: 1em;
+	color: white;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 1em 1.5em;
+	font-size: 1.1rem;
 	font-weight: bold;
+	cursor: pointer;
+	transform: translateX(50%);
 }

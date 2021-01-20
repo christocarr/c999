@@ -28,7 +28,7 @@ function BackToTop() {
       style={{display: buttonDisplay}}
       className={styles.button} 
       >
-        Back to top
+        Back
       </button>
   )
 }
