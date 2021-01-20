@@ -1,8 +1,10 @@
+
 import Head from 'next/head'
 import Header from '../components/Header'
 import VideoTitle from '../components/VideoTitle'
 import VideoPlayer from '../components/VideoPlayer'
 import VideoDescription from '../components/VideoDescription'
+import BackToTop from '../components/BackToTop'
 import { data } from '../data'
 import styles from '../styles/Home.module.css'
 
@@ -72,8 +74,9 @@ export default function Home() {
             ))}
           </div>
         </section>
+        
       </main>
-
+      <BackToTop />
       <footer>
         
       </footer>
