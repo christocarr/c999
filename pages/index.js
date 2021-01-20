@@ -28,7 +28,7 @@ export default function Home() {
           <div className={styles.videos__container}>
             {videoData.map((item, index) => (
               <div className={styles.video__section} key={index}>
-                <VideoPlayer url={item.url}/>
+                <VideoPlayer url={item.url} type={item.type}/>
                 <VideoTitle title={item.title}/>
                 <VideoDescription description={item.description}/>
               </div>
@@ -41,7 +41,7 @@ export default function Home() {
           <div className={styles.videos__container}>
             {experimentalData.map((item, index) => (
               <div className={styles.video__section} key={index}>
-                <VideoPlayer url={item.url}/>
+                <VideoPlayer url={item.url} type={item.type}/>
                 <VideoTitle title={item.title}/>
                 <VideoDescription description={item.description}/>
               </div>
@@ -54,7 +54,7 @@ export default function Home() {
           <div className={styles.videos__container}>
             {installationData.map((item, index) => (
               <div className={styles.video__section} key={index}>
-                <VideoPlayer url={item.url}/>
+                <VideoPlayer url={item.url} type={item.type}/>
                 <VideoTitle title={item.title}/>
                 <VideoDescription description={item.description}/>
               </div>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className={styles.videos__container}>
             {mappingData.map((item, index) => (
               <div className={styles.video__section} key={index}>
-                <VideoPlayer url={item.url}/>
+                <VideoPlayer url={item.url} type={item.type}/>
                 <VideoTitle title={item.title}/>
                 <VideoDescription description={item.description}/>
               </div>
