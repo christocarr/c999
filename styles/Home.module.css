@@ -19,18 +19,13 @@
 	margin-bottom: 2em;
 }
 
-/* @media (min-width: 1024px) {
-	.section {
+@media (min-width: 1024px) {
+	.videos__container {
 		display: flex;
-		width: 100%;
-	}
-
-	.section h2 {
-		display: block;
+		justify-content: space-between;
 	}
 
 	.video__section {
 		width: 45%;
-		justify-content: space-between;
 	}
-} */
+}

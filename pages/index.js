@@ -23,46 +23,54 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.section} id="video">
           <h2>video</h2>
-          {videoData.map((item, index) => (
-            <div className={styles.video__section} key={index}>
-              <VideoPlayer url={item.url}/>
-              <VideoTitle title={item.title}/>
-              <VideoDescription description={item.description}/>
-            </div>
-          ))}
+          <div className={styles.videos__container}>
+            {videoData.map((item, index) => (
+              <div className={styles.video__section} key={index}>
+                <VideoPlayer url={item.url}/>
+                <VideoTitle title={item.title}/>
+                <VideoDescription description={item.description}/>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className={styles.section} id="experimental">
           <h2>experimental</h2>
-          {experimentalData.map((item, index) => (
-            <div className={styles.video__section} key={index}>
-              <VideoPlayer url={item.url}/>
-              <VideoTitle title={item.title}/>
-              <VideoDescription description={item.description}/>
-            </div>
-          ))}
+          <div className={styles.videos__container}>
+            {experimentalData.map((item, index) => (
+              <div className={styles.video__section} key={index}>
+                <VideoPlayer url={item.url}/>
+                <VideoTitle title={item.title}/>
+                <VideoDescription description={item.description}/>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className={styles.section} id="installations">
           <h2>installations</h2>
-          {installationData.map((item, index) => (
-            <div className={styles.video__section} key={index}>
-              <VideoPlayer url={item.url}/>
-              <VideoTitle title={item.title}/>
-              <VideoDescription description={item.description}/>
-            </div>
-          ))}
+          <div className={styles.videos__container}>
+            {installationData.map((item, index) => (
+              <div className={styles.video__section} key={index}>
+                <VideoPlayer url={item.url}/>
+                <VideoTitle title={item.title}/>
+                <VideoDescription description={item.description}/>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className={styles.section} id="mapping">
           <h2>mapping</h2>
-          {mappingData.map((item, index) => (
-            <div key={index}>
-              <VideoPlayer url={item.url}/>
-              <VideoTitle title={item.title}/>
-              <VideoDescription description={item.description}/>
-            </div>
-          ))}
+          <div className={styles.videos__container}>
+            {mappingData.map((item, index) => (
+              <div className={styles.video__section} key={index}>
+                <VideoPlayer url={item.url}/>
+                <VideoTitle title={item.title}/>
+                <VideoDescription description={item.description}/>
+              </div>
+            ))}
+          </div>
         </section>
       </main>
 
