@@ -14,7 +14,7 @@ function Header() {
           />
         </div>
         <div className={styles.contact__icons}>
-          <Link href="https://www.instagram.com">
+          <Link href="https://www.instagram.com/c999visual">
             <div className={styles.instagram}>
               <Image 
                 src="/images/instagram.png"
@@ -24,7 +24,7 @@ function Header() {
               />
             </div>
           </Link>
-          <Link href="">
+          <Link href="mailto:c999@live.it">
             <div className={styles.mail}>
               <Image 
                 src="/images/mail-icon.png"
