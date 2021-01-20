@@ -6,6 +6,8 @@
 	margin-top: 0;
 	margin-bottom: 1em;
 	border-bottom: red 2px solid;
+	font-size: 2.2rem;
+	text-transform: uppercase;
 }
 
 .main {
