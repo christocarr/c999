@@ -37,7 +37,7 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/#installations">
+              <Link href="/#vjing">
                 vjing
               </Link>
             </li>
