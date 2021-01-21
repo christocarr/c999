@@ -42,7 +42,14 @@
 	position: relative;
 	width: 56px;
 	height: 56px;
-	margin-right: 2.5em;
+	margin-right: 2em;
+}
+
+.vimeo {
+	position: relative;
+	width: 56px;
+	height: 56px;
+	margin-right: 2em;
 }
 
 .mail {

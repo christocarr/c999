@@ -54,6 +54,16 @@ function Header() {
               />
             </div>
           </Link>
+          <Link href="https://vimeo.com/c999visual">
+            <div className={styles.vimeo}>
+              <Image 
+                src="/images/vimeo.png"
+                layout="fill"
+                objectFit="cover"
+                alt="instagram" 
+              />
+            </div>
+          </Link>
           <Link href="mailto:c999@live.it">
             <div className={styles.mail}>
               <Image 
