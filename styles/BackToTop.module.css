@@ -1,13 +1,14 @@
 .button {
 	position: fixed;
-	bottom: 0;
+	bottom: 0.5em;
 	right: 50vw;
-	border: none;
-	color: white;
-	background: rgba(0, 0, 0, 0.8);
-	padding: 1em 1.5em;
-	font-size: 1.1rem;
-	font-weight: bold;
+	padding: 1em 2em;
+	border: 2px solid black;
+	border-radius: 35px;
+	color: black;
+	background: rgb(255, 255, 255);
 	cursor: pointer;
 	transform: translateX(50%);
+	letter-spacing: 0.5em;
+	font-family: 'DIN';
 }

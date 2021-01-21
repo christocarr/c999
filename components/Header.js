@@ -13,6 +13,32 @@ function Header() {
             alt="logo"
           />
         </div>
+
+        <nav className={styles.header__nav}>
+          <ul className={styles.header__nav_list}>
+            <li>
+              <Link href="/#video">
+                video art
+              </Link>
+            </li>
+            <li>
+              <Link href="/#experimental">
+                experimental films
+              </Link>
+            </li>
+            <li>
+              <Link href="/#mapping">
+                projection mapping
+              </Link>
+            </li>
+            <li>
+              <Link href="/#installations">
+                installations
+              </Link>
+            </li>
+
+          </ul>
+        </nav>
         <div className={styles.contact__icons}>
           <Link href="https://www.instagram.com/c999visual">
             <div className={styles.instagram}>
@@ -35,30 +61,6 @@ function Header() {
             </div>
           </Link>
         </div>
-        <nav className={styles.header__nav}>
-          <ul className={styles.header__nav_list}>
-            <li>
-              <Link href="/#video">
-                video
-              </Link>
-            </li>
-            <li>
-              <Link href="/#experimental">
-                experimental
-              </Link>
-            </li>
-            <li>
-              <Link href="/#installations">
-                installations
-              </Link>
-            </li>
-            <li>
-              <Link href="/#mapping">
-                mapping
-              </Link>
-            </li>
-          </ul>
-        </nav>
       </header>
   )
 }

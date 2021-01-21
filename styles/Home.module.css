@@ -5,9 +5,9 @@
 .section h2 {
 	margin-top: 0;
 	margin-bottom: 1em;
-	border-bottom: red 2px solid;
-	font-size: 2.2rem;
-	text-transform: uppercase;
+	border-bottom: black 2px solid;
+	font-size: 1.5rem;
+	text-transform: lowercase;
 }
 
 .main {
@@ -29,5 +29,8 @@
 
 	.video__section {
 		width: 45%;
+	}
+	.section h2 {
+		font-size: 2rem;
 	}
 }

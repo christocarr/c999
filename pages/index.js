@@ -24,7 +24,7 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <section className={styles.section} id="video">
-          <h2>video</h2>
+          <h2>video art</h2>
           <div className={styles.videos__container}>
             {videoData.map((item, index) => (
               <div className={styles.video__section} key={index}>
@@ -37,9 +37,22 @@ export default function Home() {
         </section>
 
         <section className={styles.section} id="experimental">
-          <h2>experimental</h2>
+          <h2>experimental films</h2>
           <div className={styles.videos__container}>
             {experimentalData.map((item, index) => (
+              <div className={styles.video__section} key={index}>
+                <VideoPlayer url={item.url} type={item.type}/>
+                <VideoTitle title={item.title}/>
+                <VideoDescription description={item.description}/>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.section} id="mapping">
+          <h2>projection mapping</h2>
+          <div className={styles.videos__container}>
+            {mappingData.map((item, index) => (
               <div className={styles.video__section} key={index}>
                 <VideoPlayer url={item.url} type={item.type}/>
                 <VideoTitle title={item.title}/>
@@ -62,18 +75,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.section} id="mapping">
-          <h2>mapping</h2>
-          <div className={styles.videos__container}>
-            {mappingData.map((item, index) => (
-              <div className={styles.video__section} key={index}>
-                <VideoPlayer url={item.url} type={item.type}/>
-                <VideoTitle title={item.title}/>
-                <VideoDescription description={item.description}/>
-              </div>
-            ))}
-          </div>
-        </section>
+
         
       </main>
       <BackToTop />
