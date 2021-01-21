@@ -36,7 +36,11 @@ function Header() {
                 installations
               </Link>
             </li>
-
+            <li>
+              <Link href="/#installations">
+                vjing
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className={styles.contact__icons}>
