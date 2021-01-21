@@ -40,22 +40,25 @@
 
 .instagram {
 	position: relative;
-	width: 56px;
-	height: 56px;
+	width: 40px;
+	height: 40px;
 	margin-right: 2em;
+	cursor: pointer;
 }
 
 .vimeo {
 	position: relative;
-	width: 56px;
-	height: 56px;
+	width: 40px;
+	height: 40px;
 	margin-right: 2em;
+	cursor: pointer;
 }
 
 .mail {
 	position: relative;
-	width: 80px;
-	height: 54px;
+	width: 60px;
+	height: 40px;
+	cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -75,9 +78,15 @@
 		width: 83px;
 		height: 83px;
 	}
+	.vimeo {
+		position: relative;
+		width: 84px;
+		height: 83px;
+		margin-right: 2em;
+	}
 	.mail {
-		width: 120px;
-		height: 82px;
+		width: 107px;
+		height: 83px;
 	}
 	.header__nav_list li {
 		font-size: 2.5rem;
