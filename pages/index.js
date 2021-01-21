@@ -14,6 +14,8 @@ export default function Home() {
   const installationData = data.filter(item => item.section === 'installations')
   const mappingData = data.filter(item => item.section === 'mapping')
   const experimentalData = data.filter(item => item.section === 'experimental')
+  const vjingData = data.filter(item => item.section === 'vjing')
+
 
   return (
     <div className={styles.container}>
@@ -75,7 +77,18 @@ export default function Home() {
           </div>
         </section>
 
-
+        <section className={styles.section} id="vjing">
+          <h2>vjing</h2>
+          <div className={styles.videos__container}>
+            {vjingData.map((item, index) => (
+              <div className={styles.video__section} key={index}>
+                <VideoPlayer url={item.url} type={item.type}/>
+                <VideoTitle title={item.title}/>
+                <VideoDescription description={item.description}/>
+              </div>
+            ))}
+          </div>
+        </section>
         
       </main>
       <BackToTop />

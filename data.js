@@ -51,4 +51,12 @@ export const data = [
     section: 'experimental',
     type: 'youtube'
   },
+
+  {
+    title: 'Goodbye',
+    url: 'https://player.vimeo.com/video/235312561',
+    description: `The work was devised to entertain the large local audience and numerous visitors who regularly invade Parma during the period of the international festival.`,
+    section: 'vjing',
+    type: 'youtube'
+  },
 ]
